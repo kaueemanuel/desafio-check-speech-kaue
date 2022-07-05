@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Container } from './Navbar.styles';
+import React from 'react';
+import { Container, Content } from './Navbar.styles';
 
 const Narbar: React.FC = () => {
   return <Container>
-    Navbar
+    <Content>Navbar</Content>
   </Container>;
 }
 
