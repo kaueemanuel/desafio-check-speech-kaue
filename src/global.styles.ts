@@ -17,11 +17,12 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-family);
+  font-size: 16px;
 }
 
 body {
   margin: 0;
-  font-size: 12px;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-background);
@@ -30,6 +31,9 @@ body {
 
 .containerWrapper {
   max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 `;

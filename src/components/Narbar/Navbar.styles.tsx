@@ -5,10 +5,8 @@ export const Container = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #9b9bdb;
+  background-color: var(--color-background);
   z-index: 10000;
-  display: flex;
-  justify-content: center;
 `;
 
 export const Content = styled.div.attrs({ className: "containerWrapper" })`
@@ -16,6 +14,26 @@ export const Content = styled.div.attrs({ className: "containerWrapper" })`
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 12px;
-  border: 1px solid green;
+  padding: 12px 0px;
+  flex-wrap: wrap;
+`;
+
+export const Logo = styled.div`
+  font-size: 1.33rem;
+  font-weight: bold;
+`;
+
+export const LinksContent = styled.div`
+  font-size: 1.33rem;
+  font-weight: bold;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    gap: 12px;
+  }
+  a {
+    text-decoration: none;
+    color: var(--color-primary);
+  }
 `;
