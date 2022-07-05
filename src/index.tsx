@@ -1,16 +1,15 @@
-import React, { useEffect } from 'react';
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
-import Navbar from './components/Narbar/Navbar';
-import Solutions from './components/Solutions/Solutions';
-import Customers from './components/Customers/Customers';
-import Prices from './components/Prices/Prices';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
+import React, { useEffect } from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import Navbar from "./components/Narbar/Navbar";
+import Solutions from "./components/Solutions/Solutions";
+import Customers from "./components/Customers/Customers";
+import Prices from "./components/Prices/Prices";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 import WebFont from "webfontloader";
-import GlobalStyle from './global.styles';
-
+import GlobalStyle from "./global.styles";
 
 function LoadFonts() {
   useEffect(() => {
@@ -25,7 +24,7 @@ function LoadFonts() {
 }
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>

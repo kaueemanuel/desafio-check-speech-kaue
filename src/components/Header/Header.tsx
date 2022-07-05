@@ -1,11 +1,9 @@
-import React from 'react';
-import { Container } from './Header.styles';
+import React from "react";
+
+import { Container } from "./Header.styles";
 
 const Header: React.FC = () => {
-  
-  return <Container>
-    Header
-  </Container>;
-}
+  return <Container>Header</Container>;
+};
 
 export default Header;

@@ -11,11 +11,11 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const Content = styled.div.attrs({className: 'containerWrapper'})`
+export const Content = styled.div.attrs({ className: "containerWrapper" })`
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 12px;
-  border: 1px solid green
+  border: 1px solid green;
 `;
