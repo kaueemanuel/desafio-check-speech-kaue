@@ -4,11 +4,10 @@ const GlobalStyle = createGlobalStyle`
 
 :root {
   --color-primary-accent: #112D4E;
-  --color-primary: #3F72AF;
+  --color-primary: #111111;
   --color-background: #ffffff;
-  --color-background-secondary: #DBE2EF;
-  --font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  --color-background-secondary: #f2f2f2;
+  --font-family: Oswald, sans-serif;
   --box-shadow-default: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 }
 
@@ -28,6 +27,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-background);
   color: var(--color-primary);
+}
+
+section {
+  width: 100%;
+  padding: 40px 0px;
 }
 
 .containerWrapper {

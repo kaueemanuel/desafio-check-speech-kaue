@@ -5,7 +5,7 @@ export const Container = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--color-background);
+  background-color: var(--color-background-secondary);
   z-index: 10000;
 `;
 
@@ -19,13 +19,16 @@ export const Content = styled.div.attrs({ className: "containerWrapper" })`
 `;
 
 export const Logo = styled.div`
+  font-family: Oswald, sans-serif;
   font-size: 1.33rem;
-  font-weight: bold;
+  font-weight: 600;
+  text-transform: uppercase;
+
 `;
 
 export const LinksContent = styled.div`
   font-size: 1.33rem;
-  font-weight: bold;
+  font-weight: 500;
 
   ul {
     display: flex;
