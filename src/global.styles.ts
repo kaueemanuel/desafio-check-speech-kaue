@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   font-family: var(--font-family);
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
