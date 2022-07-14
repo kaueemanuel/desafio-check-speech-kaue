@@ -9,7 +9,12 @@ const Narbar: React.FC = () => {
     const sections = document.querySelectorAll('section');
     const navbar = document.getElementById('navbar');
     const navBarHeight = navbar ? navbar.clientHeight : 0;
-    window.addEventListener('scroll', ()=> {
+
+    sections.forEach(section => {
+      section.style.scrollMargin = `${navBarHeight}px`;
+    });
+
+    window.addEventListener('scroll', () => {
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
@@ -19,11 +24,11 @@ const Narbar: React.FC = () => {
       })
     });
   }, []);
-  
+
   return (
     <Container id="navbar">
       <Content>
-        <Logo>CheckSpeech AI</Logo>
+        <Logo href="/">CheckSpeech AI</Logo>
         <LinksContent>
           <ul className="navbar">
             <li>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -18,12 +18,13 @@ export const Content = styled.div.attrs({ className: "containerWrapper" })`
   flex-wrap: wrap;
 `;
 
-export const Logo = styled.div`
+export const Logo = styled.a`
   font-family: Oswald, sans-serif;
-  font-size: 1.33rem;
+  font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
-
+  text-decoration: none;
+  color: var(--color-primary);
 `;
 
 export const LinksContent = styled.div`
