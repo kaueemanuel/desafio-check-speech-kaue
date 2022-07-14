@@ -35,8 +35,14 @@ export const LinksContent = styled.div`
     list-style-type: none;
     gap: 12px;
   }
-  a {
-    text-decoration: none;
-    color: var(--color-primary);
-  }
+`;
+
+interface LinkProps {
+  active?: boolean;
+}
+
+export const Link = styled.a<LinkProps>`
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: ${props => props.active ? '600' : 'normal'};
 `;
