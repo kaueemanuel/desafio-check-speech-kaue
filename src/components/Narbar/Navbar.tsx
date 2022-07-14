@@ -28,7 +28,7 @@ const Narbar: React.FC = () => {
   return (
     <Container id="navbar">
       <Content>
-        <Logo href="/">CheckSpeech AI</Logo>
+        <Logo href={`#${sections.header.key}`}>CheckSpeech AI</Logo>
         <LinksContent>
           <ul className="navbar">
             <li>
