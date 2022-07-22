@@ -20,6 +20,10 @@ const GlobalStyle = createGlobalStyle`
   scroll-behavior: smooth;
 }
 
+h1,h2,h3,h4 {
+  color: var(--color-primary);
+}
+
 body {
   margin: 0;
   font-size: 16px;

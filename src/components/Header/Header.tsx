@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import sections from "../../consts/sections";
+import sections from '../../consts/sections';
 
-import { Container } from "./Header.styles";
+import { Container } from './Header.styles';
 
 const Header: React.FC = () => {
   return <Container id={sections.header.key}>Header</Container>;

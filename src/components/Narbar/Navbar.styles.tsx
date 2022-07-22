@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   position: sticky;
@@ -7,9 +7,10 @@ export const Container = styled.div`
   width: 100%;
   background-color: var(--color-background-secondary);
   z-index: 10000;
+  box-shadow: var(--box-shadow-default);
 `;
 
-export const Content = styled.div.attrs({ className: "containerWrapper" })`
+export const Content = styled.div.attrs({ className: 'containerWrapper' })`
   display: flex;
   width: 100%;
   align-items: center;
@@ -45,5 +46,5 @@ interface LinkProps {
 export const Link = styled.a<LinkProps>`
   text-decoration: none;
   color: var(--color-primary);
-  font-weight: ${props => props.active ? '600' : 'normal'};
+  font-weight: ${(props) => (props.active ? '600' : 'normal')};
 `;

@@ -1,10 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Container = styled.section`
+export const Container = styled.section.attrs({ className: 'containerWrapper' })`
   width: 100%;
-  height: 200px;
   border: 1px solid red;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 `;
